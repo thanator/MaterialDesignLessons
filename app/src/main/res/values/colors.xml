@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorInner">#cd1c1c</color>
+    <color name="colorBorder">#06bc37</color>
+
+    <color name="colorPrimaryForText">#d9e60707</color>
+    <color name="colorSecondaryForText">#d93be607</color>
+    <color name="colorTrihderyForText">#d90e07e6</color>
+    <color name="colorPrimaryForTextInverce">#d9078de6</color>
+    <color name="colorSecondaryForTextInverce">#d9dbe607</color>
+    <color name="colorTrihderyForTextInverce">#d9e607bd</color>
+    <color name="colorReverce">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+
+  <!--  <color name="colorControlNormal">#10000000</color>-->
+
+
+</resources>
