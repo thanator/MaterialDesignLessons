@@ -7,7 +7,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="click"
+        android:text="@string/click"
         android:id="@+id/button_click"/>
 
     <TextView
@@ -16,7 +16,16 @@
         android:layout_height="match_parent"
         android:background="@drawable/back_bor_text"
         android:layout_margin="8dp"
-        android:visibility="visible"/>
+        android:visibility="visible"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
 
 
 

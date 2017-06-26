@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.tan_ds.newone.MainActivity">
+    tools:context="com.tan_ds.newone.Activities.MainActivity">
 
 
     <android.support.design.widget.AppBarLayout
@@ -176,7 +176,7 @@
                 android:textAppearance="@style/TextAppearance.Sample.Body.Headline.Accent"
                 />
 
-            <com.tan_ds.newone.SampleView
+            <com.tan_ds.newone.Activities.SampleView
                 android:id="@+id/sample_view"
                 style="@style/Widget.SampleView"
                 android:layout_width="wrap_content"

@@ -1,4 +1,4 @@
-package com.tan_ds.newone;
+package com.tan_ds.newone.Activities;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -10,16 +10,27 @@ import android.support.annotation.RequiresApi;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.tan_ds.newone.Adapters.AdapterForCards;
+import com.tan_ds.newone.R;
+
+import java.util.ArrayList;
 
 /**
  * Created by Tan-DS on 6/22/2017.
  */
 
 public class MainActivity extends AppCompatActivity {
+
+    private RecyclerView mRecView;
+    private AdapterForCards mAdapter;
+    private RecyclerView.LayoutManager mManager;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -60,6 +71,18 @@ public class MainActivity extends AppCompatActivity {
                 anim.start();
             }
         });
+
+        ArrayList<String> data = new ArrayList<>();
+        data.add("aaa");
+        data.add("bbb");
+
+        mRecView = (RecyclerView) findViewById(R.id.my_recycler_view);
+
+        mManager = new LinearLayoutManager(this);
+        mAdapter = new AdapterForCards(data);
+
+        mRecView.setLayoutManager(mManager);
+        mRecView.setAdapter(mAdapter);
 
         /* TextInputLayout layout = (TextInputLayout) findViewById(R.id.inputText);
         layout.setError("ERROR");

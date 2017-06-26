@@ -1,4 +1,4 @@
-package com.tan_ds.newone;
+package com.tan_ds.newone.Activities;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.tan_ds.newone.R;
 
 public class SampleView extends View {
 
