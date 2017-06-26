@@ -19,6 +19,9 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
 
+        <item name="android:windowActivityTransitions" tools:targetApi="lollipop">true</item>
+
+
 
         <item name="buttonStyle">@style/Widget.AppCompat.Button.Colored</item>
 
