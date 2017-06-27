@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private AdapterForCards mAdapter;
     private RecyclerView.LayoutManager mManager;
     private float mScreenHeight;
+    private float moveTo;
 
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
