@@ -13,6 +13,8 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.widget.Button;
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         mScreenHeight = view.getHeight();
 
         Button button = (Button) findViewById(R.id.button_click);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,4 +122,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.my_menu, menu);
+        return true;
+
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        return super.onOptionsItemSelected(item);
+    }
 }

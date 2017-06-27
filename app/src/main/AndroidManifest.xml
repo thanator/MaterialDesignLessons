@@ -14,6 +14,10 @@
         </activity>
 
         <activity android:name=".Activities.ActivityForAnimation">
+
+        </activity>
+
+        <activity android:name=".Activities.ActivityLesson">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

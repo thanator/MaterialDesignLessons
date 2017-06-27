@@ -1,5 +1,41 @@
 <resources>
 
+
+    <style name="Ttest" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:colorForeground">@color/colorSecondaryForText</item>
+        <item name="android:colorForegroundInverse">@color/colorSecondaryForText</item>
+        <item name="colorControlNormal">?attr/colorPrimary</item>
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ThemeOverlay.My.White" parent="ThemeOverlay.AppCompat.ActionBar" >
+        <item name="colorControlNormal">@color/colorReverce</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/TextAppearance.Colored</item>
+        <item name="android:popupMenuStyle">@style/PopupTheme</item>
+        <item name="android:textColorPrimary">@color/colorReverce</item>
+
+
+    </style>
+
+    <style name="ThemeOverlay.My.Colored" parent="ThemeOverlay.AppCompat.ActionBar" >
+        <item name="android:popupMenuStyle">@style/PopupTheme</item>
+        <item name="android:background">@color/colorReverce</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/TextAppearance.Colored</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="PopupTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:colorBackground">@color/colorReverce</item>
+    </style>
+
+    <style name="TextAppearance.Colored" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+
     <style name="TextAppearance.My" parent="TextAppearance.AppCompat">
 
     </style>
@@ -69,6 +105,20 @@
 
     </style>
 
+    <style name="Base.ThemeOverlay.AppCompat.ActionBar.my" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/colorReverce</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorPrimary">@color/colorReverce</item>
 
+    </style>
+    <style name="Base.TextAppearance.Widget.AppCompat.Toolbar.Title.My" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/colorReverce</item>
+    </style>
 
+    <style name="Base.ThemeOverlay.AppCompat.ActionBar.other" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/colorReverce</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorPrimary">@color/colorReverce</item>
+
+    </style>
 </resources>

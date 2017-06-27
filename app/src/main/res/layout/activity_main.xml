@@ -10,10 +10,13 @@
 
 
     <android.support.design.widget.AppBarLayout
+        android:theme="?attr/actionBarTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <android.support.v7.widget.Toolbar
+
+            android:id="@+id/toolbar_my"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </android.support.v7.widget.Toolbar>
@@ -100,6 +103,7 @@
 
 
                 <Button
+                    android:id="@+id/butt_1"
                     android:text="Click me!"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -110,6 +114,7 @@
                     />
 
                 <Button
+                    android:id="@+id/butt_2"
                     android:text="Click me!"
 
                     android:layout_width="0dp"

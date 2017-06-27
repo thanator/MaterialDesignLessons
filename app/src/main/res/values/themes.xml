@@ -14,12 +14,32 @@
 
     </style>
 
+    <style name="ThemeOverlay.AppTheme" parent="ThemeOverlay.AppCompat.ActionBar" >
+        <item name="colorControlNormal">@color/colorReverce</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorPrimary">@color/colorReverce</item>
 
 
+
+    </style>
+
+    <style name="AppThemeWhite" parent="AppTheme">
+        <item name="actionBarTheme">@style/ThemeOverlay.My.White</item>
+    </style>
+
+
+    <style name="AppThemeColored" parent="AppTheme">
+        <item name="actionBarTheme">@style/ThemeOverlay.My.Colored</item>
+
+    </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
         <!-- Customize your theme here. -->
 
+
+        <item name="android:actionBarTheme" tools:targetApi="lollipop"> @style/Base.ThemeOverlay.AppCompat.ActionBar.my</item>
         <item name="android:windowActivityTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:toolbarStyle" tools:targetApi="lollipop">@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title.My </item>
 
 
 
