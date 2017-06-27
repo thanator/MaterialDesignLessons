@@ -2,6 +2,7 @@ package com.tan_ds.newone.Activities;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.animation.ValueAnimator;
 import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
@@ -31,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecView;
     private AdapterForCards mAdapter;
     private RecyclerView.LayoutManager mManager;
+    private float mScreenHeight;
+
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -38,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
-
+        View view = findViewById(R.id.main_third_layout);
+        mScreenHeight = view.getHeight();
 
         Button button = (Button) findViewById(R.id.button_click);
         button.setOnClickListener(new View.OnClickListener() {
@@ -98,4 +102,20 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();*/
 
     }
+
+
+
+    private void onStartAnimation(){
+        ValueAnimator valueAnimator = ValueAnimator.ofFloat(0, -mScreenHeight);
+
+        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                float value = (float) animation.getAnimatedValue();
+
+            }
+        });
+
+    }
+
 }
